@@ -1,0 +1,231 @@
+Version 0.01
+
+Specifying the project:
+
+This project aims to build an agent for a game named "GuanPai".
+
+To-Do list:
+1:	HelloWorld:	changes the layout and highlight manner to my preference.
+3:	Focus on the util.card
+4:	Give a start on the main-package.
+5:	Give a start on the util.sprite
+
+Version 0.02
+
+To-Do list:
+1:	Focus on the util.sprite, and finish the Sprite part.
+2:	Give a start on the main-package base on the sprite.
+
+Version 0.03
+
+To-Do list:
+1:	Add Mouse listeners to SpriteManager.
+2:	Add Mouse listeners to CardSprite.
+
+Version 0.04
+
+To-Do list:
+1:	Set up displayer for card sprite.
+	A:	To make design embedded is a better choice.
+	B:	Hide information from the gamePanel
+	C:	Information get handled in the SpriteManager Level.
+	
+Version 0.05
+
+To-Do list:
+1:	set up the rules for this game:
+	A:	Make rules for player.
+	
+Version 0.06
+To-Do list:
+1:	set up the rules for this game:
+	A:	Make rules for both player and opponent.
+	
+Version 0.07
+To-Do list:
+1:	Add AI patch: gameAI, which is the core of the AI.
+
+Version 0.07
+To-Do list:
+1:	Modify AI patch:
+	1: modify the game environment.
+	2: modify the method to trigger the AI to act.
+
+Version 0.08 & 0.09
+To-Do list:
+1:	Build a Demo AI: always select the last one card.
+
+Version 0.10
+To-Do list:
+1:	Build the probability calculator.
+
+Version 0.11
+To-Do list:
+1:	Simple test for the game use of the probability-calculator.
+
+Version 0.12
+To-Do list:
+1:	Create a game history class to hold the game process information.
+
+Version 0.13
+To-Do list:
+1:	Design a System.
+	A:	Seed.
+	B:	InitialSeed.
+Seed is a solution to current situation, such that the AI could follow the guidance and finish the game.
+An initial Seed is a special seed, it is created at the beginning of each move. and shall be collected in the record.
+
+Version 0.14
+To-Do list:
+1:	Modify the SeedGenerator.
+	A: Start from all separate single cards.
+	B: Use detector to upgrade to new generation.
+	
+Version 0.15
+To-Do list:
+1:	Test and revise SeedGenerator.
+
+Version 0.16
+To-Do list:
+1:	Develop the GameRecorder to replace the GameHisotry to perform more sophisticated functions.
+
+Version 0.17
+To-Do list:
+1:	Design a GameAnalyser to help Evaluator.
+2:	Design an Evaluator to evaluate seed.
+3:	Design an Evaluation to hold the report of a seed from a evaluator.
+4:	Design a Decider to choose an action for the GameAI from all evaluations.
+
+Version 0.18
+To-Do list:
+1:	Implement the Evaluation: a summary of a seed.
+
+Version 0.18b
+To-Do list:
+1:	Modify the Evaluation: print manner for debug purpose; bug fixed.
+2:	Modify the SpriteManager: print manner for debug purpose.
+
+Version 0.19
+To-Do list:
+1:	Design the Decider: a simple action selection function.
+
+Version 0.20
+To-Do list:
+1:	Implement a simple cards choose function for Decider.
+
+Version 0.20b
+To-Do list:
+1:	Test the simple cards selection function for Decider.
+
+Version 0.21
+To-Do list:
+1:	Add flexibility to the function:
+	A:	The Decider would "probably" tend to break a combination in order to win.
+	
+Version 0.22
+To-Do list:
+1:	Revise the design. Add the Actions as the essential of the decision making.
+	A:	Actions is a sequence of cards selection actions.
+	B:	Additionally, the actions shall take the recorder
+		 and probability calculator and ect. to validate
+		 it's sequence and give a score as a result.
+		 
+Version 0.23
+To-Do list:
+1:	Program coding transformation.
+
+Version 0.24
+To-Do list:
+1:	Program coding transformation test and revise.
+
+Version 0.25
+To-Do list:
+1:	Revise the design of the Evaluation.
+	A:	Seed -> Summary
+	B:	Summary -> [Evaluation,...]
+	C:	Evaluation = Actions + Justifications.
+	D:	Justifications = a number, represents the winning chance.
+
+Version 0.26
+To-Do list:
+1:	Bug fixed:
+	A:	When the game reset, refresh all memory.
+
+Version 0.27
+To-Do list:
+1:	Revise the SeedGenerator functionality.
+	A:	Instead of keep finalized seeds, this time, the Generator would keep all internal seeds.
+	B:	All internal seeds are now available for later selection functions.
+	C:	This main change accelerate the action generation functions.
+	
+Version 0.28
+To-Do list:
+1:	Revise the Evaluation: this version only provide the system.
+	A:	Given a seed, create a sequence of actions.
+	B:	The sequence of the actions shall be guided with the analyser.
+	
+Version 0.29
+All functionalities have been implemented successfully.
+The game have not been tested. The code has not been well commented and organized.
+The following versions shall consider to reorganize the code.
+	A:	Code design.
+	B:	Package reorganize.
+	C:	Class relations.
+	D:	Documentations.
+
+To-Do list:
+1:	reOrganize the classes into different packages.
+
+Version 0.30
+To-Do list:
+1:	Add comments for the main package.
+
+Version 0.31
+To-Do list:
+1:	Add comments for the game.util package.
+	A:	Clock
+	B:	Counter
+	C:	GameEnvironment
+	D:	UpdateCalculator
+	
+Version 0.32
+To-Do list:
+1:	Add comments for the game.card package.
+	A:	Card
+	B:	CardComparator
+	C:	CardFactory
+	D:	Cards
+	E:	CardsType
+	F:	ICards
+	G:	Rank
+	H:	Suit
+	
+Version 0.33
+To-Do list:
+1:	Add comments for the game.sprite package.
+	A:	CardSprite
+	B:	CardSpriteFactory
+	C:	GamePanel
+	D:	ImagesLoader
+	E:	Sprite
+	F:	SpriteManager
+
+Version 0.34
+To-Do list:
+1:	Add comments for the ai package
+	A:	GameAI
+	
+Version 0.35
+To-Do list:
+1:	Add comments for the ai.util package
+	A:	Actions
+	B:	CardsComparator
+	C:	CardSet
+	D:	Evaluation
+	E:	ProbSet
+	F:	ProbabilityCalculator
+	G:	Seed
+	H:	Summary
+
+Version 0.37
+Till this version, simple documentations are completed.
